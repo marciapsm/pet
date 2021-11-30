@@ -1,0 +1,113 @@
+/*PRATICA*/
+body {
+	font-family: monospace;
+	}
+h2{
+	color: #042b43;
+}
+img{
+	max-width: 100%;
+	display: block;/*define os itens em blocos individuais*/
+}
+
+/* Flex Container */
+.container {
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	/*Define a direção dos itens flexíveis dentro do 
+	elemento div na ordem inversa:*/
+	align-items: stretch;
+	/*A propriedade align-items especifica o alinhamento padrão 
+	para itens dentro do contêiner flexível.
+	A propriedade align-items especifica o alinhamento padrão 
+	para itens dentro do contêiner flexível.
+	*/
+}
+/* Flex Item */
+.item {
+	margin: 5px;
+	padding: 0 10px;
+	background: #A0522D;
+	text-align: center;
+	font-size: 1.5em;
+}
+.cabecalho{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	flex-wrap: wrap;
+	max-height: 150px;
+	background-color: #A0522D;
+	color: #DAA520;
+}
+
+.menu{
+	display: flex;
+}
+.menu li{
+	margin-left: 10px;
+	list-style-type: none;
+}
+.menu li a{
+	display: block;
+	padding: 10px;
+	background-color: #59200b;
+	text-decoration: none;
+	color: #bdc6c3;
+}
+.menu li a:hover{
+	background-color: #042b43;
+	color: #f2f2f3;
+}
+/*ORGANIZANDO AS ÁREAS*/
+/*.logo{
+	order: 1;
+	flex-grow: 1;
+}*/
+.menu{
+	order: 1;
+	flex-grow: 2;
+	align-self:;
+}
+.texto{
+	order: 2;
+	justify-content: space-around;
+	display: inline-flex;
+}
+.imagens{
+	order: 3;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px;
+	flex-wrap: wrap;
+}
+.rodape{
+	order: 4;
+	text-align: center;
+	background-color: #A0522D;
+}
+.t1{
+   min-height: 100px;
+   width: 400px;
+   background: #bdc3c6;
+   color: #000;
+   text-align: justify;
+   font-size: 0.8em;
+   padding: 5px;
+}
+.t1 img{
+	max-width:50%;
+	align-items: center;
+	margin: auto;
+}
+.galeria{
+   background-color:  #59200b;
+	flex: 1 1 170px;
+	margin: 10px;
+	flex-direction: column;
+}
